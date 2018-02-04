@@ -61,28 +61,40 @@ class ViewController: UIViewController {
             if storyIndex == 1 {
                 // go to story 3
                 storyTextView.text = story3
+                topButton.setTitle(answer3a, for: .normal)
+                bottomButton.setTitle(answer3b, for: .normal)
                 storyIndex = 3
             } else if storyIndex == 3 {
                 // go to story 6
                 storyTextView.text = story6
+                topButton.isHidden = true
+                bottomButton.isHidden = true
                 storyIndex = 6
             } else {  // storyIndex == 2
                 // go to story 3
                 storyTextView.text = story3
+                topButton.setTitle(answer3a, for: .normal)
+                bottomButton.setTitle(answer3b, for: .normal)
                 storyIndex = 3
             }
         } else {  // sender.tag == 2
             if storyIndex == 1 {
                 // go to story 2
                 storyTextView.text = story2
+                topButton.setTitle(answer2a, for: .normal)
+                bottomButton.setTitle(answer2b, for: .normal)
                 storyIndex = 2
             } else if storyIndex == 3 {
                 // go to story 5
                 storyTextView.text = story5
+                topButton.isHidden = true
+                bottomButton.isHidden = true
                 storyIndex = 5
             } else {  // storyIndex == 2
                 // go to story 4
                 storyTextView.text = story4
+                topButton.isHidden = true
+                bottomButton.isHidden = true
                 storyIndex = 4
             }
         }
