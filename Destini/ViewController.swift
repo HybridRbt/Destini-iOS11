@@ -57,7 +57,35 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: UIButton) {
     
         // TODO Step 4: Write an IF-Statement to update the views
-                
+        if sender.tag == 1 {
+            if storyIndex == 1 {
+                // go to story 3
+                storyTextView.text = story3
+                storyIndex = 3
+            } else if storyIndex == 3 {
+                // go to story 6
+                storyTextView.text = story6
+                storyIndex = 6
+            } else {  // storyIndex == 2
+                // go to story 3
+                storyTextView.text = story3
+                storyIndex = 3
+            }
+        } else {  // sender.tag == 2
+            if storyIndex == 1 {
+                // go to story 2
+                storyTextView.text = story2
+                storyIndex = 2
+            } else if storyIndex == 3 {
+                // go to story 5
+                storyTextView.text = story5
+                storyIndex = 5
+            } else {  // storyIndex == 2
+                // go to story 4
+                storyTextView.text = story4
+                storyIndex = 4
+            }
+        }
         // TODO Step 6: Modify the IF-Statement to complete the story
         
     
